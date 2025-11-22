@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react'
 import { createSupabaseClient } from '@/lib/supabase'
 import { User } from '@supabase/supabase-js'
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+
 export default function AccountPage() {
   const [user, setUser] = useState<User | null>(null)
   const [username, setUsername] = useState('')

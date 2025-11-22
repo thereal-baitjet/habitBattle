@@ -3,6 +3,11 @@ import { createClient } from '@supabase/supabase-js'
 
 // Client-side Supabase client
 export const createSupabaseClient = () => {
+  // Check if we're in a build environment without env vars
+  if (typeof window === 'undefined' && (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)) {
+    // Return a mock client for build time
+    return createClient('https://placeholder.supabase.co', 'placeholder-key')
+  }
   return createClientComponentClient()
 }
 
