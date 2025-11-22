@@ -94,7 +94,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🌟 **Ready to start your habit battle?**
 
-**[Get Started Now →](https://habitbattle.app)** | **[View Demo →](https://demo.habitbattle.app)** | **[Join Discord →](https://discord.gg/habitbattle)**
+**[Get Started Now →](https://dist-gamma-roan.vercel.app/)**
 
 Made with ❤️ for everyone committed to self-improvement
 
